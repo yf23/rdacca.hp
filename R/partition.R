@@ -5,9 +5,9 @@
 
 partition.rda=function (gfs, pcan, var.names = NULL)
 {require(hier.part)
-    if (pcan > 9)
-        stop("Number of explanatory variables must be < 10 for current implementation",call. = FALSE)
-    else if (pcan > 9)
+    if (pcan > 13)
+        stop("Number of explanatory variables must be less or equal to 13 for current implementation",call. = FALSE)
+    else if (pcan > 13)
         warning("rdacca.hp produces a rounding error if number of explanatory variables >9",
             call. = FALSE)
     {
